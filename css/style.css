@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0px;
+    font-family: monospace;
+}
+
+header{
+    position: relative;
+    padding: 10px;
+    height: 425px;
+    color:white;
+    background-image: url("../images/bg_home.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header h1{
+    text-align: center;
+    font-size: 40px;
+    font-style: bold;
+    padding: 100px 120px 0;
+}
+
+header p{
+    text-align: center;
+    font-size: 20px;
+    padding: 0 250px;
+    color: silver;
+}
+
+header nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+header nav ul{
+    padding: 0;
+    margin: 30px 50px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li{
+    margin: 0 30px;
+    font-size: 15px;
+}
+
+header nav ul li img{
+    width: 300px;
+    margin-top: -10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.text-blocks{
+    padding: 60px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.text-blocks .block{
+    text-align: center;
+    margin: 0 30px;
+    width: 30%;
+}
+
+.text-blocks .block p{
+    color: rgb(41, 41, 41);
+    font-size: 11px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
