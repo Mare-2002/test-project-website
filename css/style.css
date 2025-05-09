@@ -1,3 +1,5 @@
+/* *, *::before, *::after { outline: solid 1px red; } FOR DEBUGGING */
+
 body{
     margin: 0;
     padding: 0;
@@ -13,17 +15,25 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
+}
+
+header button{
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid white;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 30px;
 }
 
 header h1{
-    text-align: center;
     font-size: 40px;
     font-style: bold;
     padding: 100px 120px 0;
 }
 
 header p{
-    text-align: center;
     font-size: 20px;
     padding: 0 250px;
     color: silver;
@@ -32,7 +42,7 @@ header p{
 header nav{
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 99%; /* 100% introduces a vertical scrollbar for the some reason?? */
 }
 
 header nav ul{
@@ -59,13 +69,15 @@ a{
 }
 
 section{
-    padding: 60px 50px;
+    padding: 40px 50px;
 }
 
-section .heading{
+section .heading h2{
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     padding-bottom: 30px;
+    font-family: Arial, sans-serif;
+    font-weight: 900;
 }
 
 section .content{
@@ -100,17 +112,122 @@ section .content{
 }
 
 .barbers .barber .profile-pic img{
-    width: 100%;
+    width: 70%;
 }
 
-.shop{
+.shop .content .product{
+    margin: 0 10px;
+}
+
+.shop .content .product img{
+    width: 100%;
+    height: auto;
+}
+
+.shop .content .product .name{
+    height: 10%;
+    font-family: arial;
+    font-size: 12px;
+}
+
+.shop .content .product .description{
+    font-size: 10px;
+}
+
+.shop .content .product .price{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 15px;
+    align-items: center;
+}
+
+.shop .content .product .price button{
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid black;
+    height: 20px;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.sign-up{
+    text-align: center;
+}
+
+.sign-up .input-container{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sign-up .input-container input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.sign-up .input-container button{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+}
+
+.disclaimer{
+    font-size: 8px;
+    color:rgb(40, 40, 40);
 }
 
 footer{
     background-color: black;
     color: white;
+    padding-top: 25px;
+}
+
+footer .columns{
     display: flex;
     justify-content: center;
+    width: 650px;
+    margin: 0 auto;
+}
+
+footer .columns .column-contact{
+    width: 40%;
+    padding: 0 20px;
+}
+
+footer .columns .column{
+    width: 20%;
+    padding: 0 20px;
+}
+
+footer .heading{
+    font-style: italic;
+    color: gray;
+}
+
+footer ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+footer ul li, a{
+    margin: 20px 0;
+    font-size: 12px;
+    color: silver;
+}
+
+.logo-footer{
+    width: 10%;
+    height: 10%;
 }
