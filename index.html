@@ -12,7 +12,7 @@
     <header>
         <h1>THE LAST TRUE RESORT FOR MEN, WHO SEEK TIMELESS STYLE</h1>
         <p>Time away from time. Get your hair and beard done at the same time.</p>
-        <button type="submit">I NEED THIS IN MY LIFE</button>
+        <button>I NEED THIS IN MY LIFE</button>
         <nav>
             <ul>
                 <li><a href="index.html">HOME</a></li>
@@ -48,18 +48,30 @@
             </div>
         </section>
 
+        <img src="images/section-divider.png" class="section-divider">
+        
         <!-- Gallery -->
         <section class="gallery">
             <div class="heading">
                 <h2>PROUD AT WHAT WE DO</h2>
             </div>
             <div class="content">
-                <img src="images/1.png">
-                <img src="images/2.png">
-                <img src="images/3.png">
-                <img src="images/4.png">
+                <button class="btn-left" onclick="scrollGallery(-1)">&#8249;</button>
+                <div class="images">
+                    <img src="images/1.png">
+                    <img src="images/2.png">
+                    <img src="images/3.png">
+                    <img src="images/4.png">
+                    <img src="images/1.png">
+                    <img src="images/2.png">
+                    <img src="images/3.png">
+                    <img src="images/4.png">
+                </div>
+                <button class="btn-right" onclick="scrollGallery(1)">&#8250;</button>
             </div>
         </section>
+
+        <img src="images/section-divider.png" class="section-divider">
 
         <!-- Barbers -->
         <section class="barbers">
@@ -102,6 +114,8 @@
                 </div>
             </div>
         </section>
+
+        <img src="images/section-divider.png" class="section-divider">
 
         <!-- Shop -->
         <section class="shop">
@@ -172,6 +186,8 @@
             </div>
         </section>
 
+        <img src="images/section-divider.png" class="section-divider">
+
         <!-- Sign up -->
          <section class="sign-up">
             <div class="heading">
@@ -229,6 +245,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

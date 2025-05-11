@@ -1,4 +1,5 @@
-/* *, *::before, *::after { outline: solid 1px red; } FOR DEBUGGING */
+/* FOR DEBUGGING ONLY */
+/* *, *::before, *::after { outline: solid 1px red; }  */
 
 body{
     margin: 0;
@@ -69,7 +70,12 @@ a{
 }
 
 section{
-    padding: 40px 50px;
+    padding: 30px 50px; /* Spacing between sections */
+}
+
+.section-divider{
+    display: block;
+    margin: 0 auto;
 }
 
 section .heading h2{
@@ -101,8 +107,49 @@ section .content{
     font-size: 11px;
 }
 
+.gallery .content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    /* max-width: 1500px; */
+}
+
+.gallery .content .images{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.gallery .content .images::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, and Edge */
+}
+
 .gallery img{
     width: 25%;
+}
+
+.gallery button{
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    border: none;
+    text-align: center;
+}
+
+.gallery .btn-left{
+    left: 0;
+}
+
+.gallery .btn-right{
+    right: 0;
 }
 
 .barbers .barber{
@@ -191,6 +238,7 @@ footer{
     background-color: black;
     color: white;
     padding-top: 25px;
+    margin-top: 30px;
 }
 
 footer .columns{
