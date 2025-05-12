@@ -1,10 +1,11 @@
-/* FOR DEBUGGING ONLY */
+/* FOR DEBUGGING ONLY  */
 /* *, *::before, *::after { outline: solid 1px red; }  */
 
 body{
     margin: 0;
     padding: 0;
-    font-family: monospace;
+    font-family: 'Montserrat', sans-serif;
+    width: 99%; /* 100% introduces a horizontal scrollbar for the some reason?? */
 }
 
 header{
@@ -27,16 +28,17 @@ header button{
     font-size: 15px;
     font-weight: 700;
     padding: 10px 30px;
+    margin-top: 15px;
 }
 
 header h1{
-    font-size: 40px;
+    font-size: 35px;
     font-style: bold;
     padding: 100px 120px 0;
 }
 
 header p{
-    font-size: 20px;
+    font-size: 19px;
     padding: 0 250px;
     color: silver;
 }
@@ -44,7 +46,7 @@ header p{
 header nav{
     position: absolute;
     top: 0;
-    width: 99%; /* 100% introduces a vertical scrollbar for the some reason?? */
+    width: 99%; /* 100% introduces a horizontal scrollbar for the some reason?? */
 }
 
 header nav ul{
@@ -74,10 +76,10 @@ header nav ul li a{
 }
 
 section{
-    padding: 30px 50px; /* Spacing between sections */
+    padding: 10px 50px 30px 50px; /* Spacing between sections */
 }
 
-.section-divider{
+.section-divider{ /* An image which divides sections */
     display: block;
     margin: 0 auto;
 }
@@ -86,7 +88,6 @@ section .heading h2{
     text-align: center;
     font-size: 18px;
     padding-bottom: 30px;
-    font-family: Arial, sans-serif;
     font-weight: 900;
 }
 
@@ -98,6 +99,11 @@ section .content{
 .text-blocks{
     display: flex;
     justify-content: center;
+}
+
+.text-blocks img{ /* Set image height explicitly to avoid layout inconsistencies */
+    width: auto;
+    height: 81px;
 }
 
 .text-blocks .block{
@@ -130,6 +136,11 @@ section .content{
 
 .gallery .content .images::-webkit-scrollbar {
     display: none; /* Hide scrollbar in Chrome, Safari, and Edge */
+}
+
+.gallery .content .images .slide{
+    min-width: 100%;
+    display: flex;
 }
 
 .gallery img{
@@ -166,6 +177,10 @@ section .content{
     width: 70%;
 }
 
+.barbers p{
+    font-size: 11px;
+}
+
 .shop .content .product{
     margin: 0 10px;
 }
@@ -177,7 +192,6 @@ section .content{
 
 .shop .content .product .name{
     height: 10%;
-    font-family: arial;
     font-size: 12px;
 }
 
